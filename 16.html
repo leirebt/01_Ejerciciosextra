@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script> 
+        /* Escribe un programa que pida dos variables, y después intercambie sus valores (si por ejemplo ponemos 8 en la variable a y 5 en la variable b, que al final del programa la variable a tenga el valor 5 y la variable b el valor 8).
+        */
+
+let variablea = parseInt(prompt("Escribe un número:"));
+let variableb = parseInt(prompt("Escribe otro número:"));
+console.log("Has introducido en la variable A el número " + variablea + " y en la variable B el número " + variableb);
+let cambioa = variablea;
+let cambiob = variableb;
+variablea = cambiob;
+variableb = cambioa;
+console.log("Ahora la variable A contiene el número " + variablea + " y la variable B el número " + variableb);
+    </script>
+</body>
+
+</html>

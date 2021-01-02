@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script> 
+        /* Escribe un programa que pida al usuario un dígito (n) y calcule y muestre el valor de n+nn+nnn. Por ejemplo si el usuario introduce 5 el programa calcularía 5 + 55 + 555
+        */
+
+let numero = (prompt("Escribe un número de un solo dígito:"));
+let suma
+let x = 1
+while (x >= 3){
+suma = numero * x
+x = x + 1
+}
+
+console.log(numero + " + " + numero + numero + " + " + numero + numero + numero );
+    </script>
+</body>
+
+</html>

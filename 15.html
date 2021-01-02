@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script> 
+        /* Escribe un programa que pida una distancia (en metros), y el tiempo tardado (como tres números: horas, minutos y segundos) y que muestre la velocidad en metros por segundo y kilómetros por hora.
+        */
+
+let distancia = parseInt(prompt("Añade la distancia en metros:"));
+window.alert("Añade ahora el tiempo tardado en horas, minutos y segundos")
+let horas = parseInt(prompt("Añade las horas:"));
+let minutos = parseInt(prompt("Añade los minutos:"));
+let segundos = parseInt(prompt("Añade los segundos:"));
+let totalsegundos = ((horas * 60) + (minutos * 60) + segundos);
+let metrosporsegundo = (distancia / totalsegundos);
+console.log("La velocidad en metros por segundos es " + metrosporsegundo);
+let kilometroshora = ((metrosporsegundo * 3600) / 1000);
+console.log("La velocidad en kilómetros por hora es " + kilometroshora);
+    </script>
+</body>
+
+</html>
